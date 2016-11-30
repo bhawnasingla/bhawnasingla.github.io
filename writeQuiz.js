@@ -1,14 +1,9 @@
-$(function() {
-    $( "#sortable" ).sortable({
-      revert: true
-    });
-    $( "#draggable" ).draggable({
-      connectToSortable: "#sortable",
-      helper: "clone",
-      revert: "invalid"
-    });
-    $( "ul, li" ).disableSelection();
-});
+$( function() {
+  $( "#sortable" ).sortable({
+    revert: true
+  });
+  $( "ul, li" ).disableSelection();
+} );
 
 var textArray=[
                 'Client JVM opens Hadoop File System',
@@ -44,5 +39,4 @@ function list(){
     li.innerHTML = shuffledArray[i]+'\n';
     ul.appendChild(li);
   }
-  document.body.appendChild(ul);
 }
