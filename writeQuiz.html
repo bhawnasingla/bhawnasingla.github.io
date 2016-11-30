@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title> Write Data Block</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+    ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 10px; }
+    li { margin: 5px; padding: 5px; width: 500px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.6/lodash.min.js"></script>
+  <script type="text/javascript" src = "writeQuiz.js"></script>
+</head>
+<body onload="list()"> 
+  <ul>
+    <li id="draggable" class="ui-state-highlight"><h3>Drag the options to set the correct order</h3></li>
+  </ul>
+  <ul id = 'sortable'></ul>
+  <button 
+    style="width: 100px; margin-left: 10px;" 
+    onclick="process()">Check the Order
+  </button>
+</body>
+</html>
